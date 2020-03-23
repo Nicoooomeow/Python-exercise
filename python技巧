@@ -1,0 +1,35 @@
+tape = [0, 0, 1, 1, 1, 0]
+print([str(sym) for sym in tape])
+print(''.join([str(symbol) for symbol in tape]))
+print('+A+'.join([str(symbol) for symbol in tape]))
+print ('|'.join([str(symbol) for symbol in tape]))
+#join函数，只改变输出
+
+print(str(symbol) for symbol in tape)
+E = (str(symbol) for symbol in tape)
+print(next(E),
+next(E),
+next(E),
+next(E),
+next(E))
+#这里E是一个generator，用（），数组则用[]
+#对于E 可以用next（）或循环输出
+
+print('|', '|'.join(str(symbol) for symbol in tape), '|')
+print('|', '|'.join(str(symbol) for symbol in tape), '|', sep='')
+#sep 改善输出间隔，等于啥间隔啥
+
+'A string'.startswith('')
+'A string'.startswith('A')
+'A string'.startswith('A ')
+'A string'.startswith('A s')
+'A string'.startswith('a')
+
+print(''.isspace(),
+' a'.isspace(),
+' '.isspace(),
+' '.isspace(),
+# \t is for tab
+' \t \n'.isspace(),
+'''
+'''.isspace())
